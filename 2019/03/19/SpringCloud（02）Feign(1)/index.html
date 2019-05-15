@@ -13,25 +13,25 @@
     
     
     
-    <title>Zxing扫描二维码 | YiShan&#39;s Blog</title>
+    <title>SpringCloud Feign | YiShan&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="zxing">
-    <meta name="description" content="jar包导入123456789101112131415161718192021222324      &amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;com.google.zxing&amp;lt;/groupId&amp;gt;	&amp;lt;artifactId&amp;gt;core&amp;lt;/artifactId&amp;gt;	&amp;lt;version&amp;gt;3.1.0&amp;lt;/version&amp;gt;&amp;lt;">
-<meta name="keywords" content="zxing">
+    <meta name="keywords" content="SpringCloud,feign">
+    <meta name="description" content="一、1.Feign介绍1234567Feign是一个声明式的伪Http客户端，它使得写Http客户端变得更简单。使用Feign，只需要创建一个接口并注解。它具有可插拔的注解特性，可使用Feign 注解和JAX-RS注解。Feign支持可插拔的编码器和解码器。Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的效果。简而言之：Feign 采用的是基于接口的注解Feign 整合">
+<meta name="keywords" content="SpringCloud,feign">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Zxing扫描二维码">
-<meta property="og:url" content="http://www.yslvdy.top/2019/03/18/zxing扫描二维码/index.html">
+<meta property="og:title" content="SpringCloud Feign">
+<meta property="og:url" content="http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/index.html">
 <meta property="og:site_name" content="YiShan&#39;s Blog">
-<meta property="og:description" content="jar包导入123456789101112131415161718192021222324      &amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;com.google.zxing&amp;lt;/groupId&amp;gt;	&amp;lt;artifactId&amp;gt;core&amp;lt;/artifactId&amp;gt;	&amp;lt;version&amp;gt;3.1.0&amp;lt;/version&amp;gt;&amp;lt;">
+<meta property="og:description" content="一、1.Feign介绍1234567Feign是一个声明式的伪Http客户端，它使得写Http客户端变得更简单。使用Feign，只需要创建一个接口并注解。它具有可插拔的注解特性，可使用Feign 注解和JAX-RS注解。Feign支持可插拔的编码器和解码器。Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的效果。简而言之：Feign 采用的是基于接口的注解Feign 整合">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-15T11:19:37.204Z">
+<meta property="og:updated_time" content="2019-05-15T11:24:46.060Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zxing扫描二维码">
-<meta name="twitter:description" content="jar包导入123456789101112131415161718192021222324      &amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;com.google.zxing&amp;lt;/groupId&amp;gt;	&amp;lt;artifactId&amp;gt;core&amp;lt;/artifactId&amp;gt;	&amp;lt;version&amp;gt;3.1.0&amp;lt;/version&amp;gt;&amp;lt;">
+<meta name="twitter:title" content="SpringCloud Feign">
+<meta name="twitter:description" content="一、1.Feign介绍1234567Feign是一个声明式的伪Http客户端，它使得写Http客户端变得更简单。使用Feign，只需要创建一个接口并注解。它具有可插拔的注解特性，可使用Feign 注解和JAX-RS注解。Feign支持可插拔的编码器和解码器。Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的效果。简而言之：Feign 采用的是基于接口的注解Feign 整合">
     
         <link rel="alternate" type="application/atom+xml" title="YiShan&#39;s Blog" href="/atom.xml">
     
@@ -120,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Zxing扫描二维码</div>
+        <div class="flex-col header-title ellipsis">SpringCloud Feign</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,11 +142,11 @@
 <header class="content-header post-header" style="background:#464646">
 
     <div class="container fade-scale">
-        <h1 class="title">Zxing扫描二维码</h1>
+        <h1 class="title">SpringCloud Feign</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-03-18T04:00:20.000Z" itemprop="datePublished" class="page-time">
-  2019-03-18
+                <time datetime="2019-03-19T04:00:20.000Z" itemprop="datePublished" class="page-time">
+  2019-03-19
 </time>
 
 
@@ -165,17 +165,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#jar包导入"><span class="post-toc-number">1.</span> <span class="post-toc-text">jar包导入</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#封装的工具类"><span class="post-toc-number">2.</span> <span class="post-toc-text">封装的工具类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#service层"><span class="post-toc-number">3.</span> <span class="post-toc-text">service层</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#FileController"><span class="post-toc-number">4.</span> <span class="post-toc-text">FileController</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#页面code"><span class="post-toc-number">5.</span> <span class="post-toc-text">页面code</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、1-Feign介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、1.Feign介绍</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、server-feign"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、server-feign</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-zxing扫描二维码" class="post-article article-type-post fade" itemprop="blogPost">
+<article id="post-SpringCloud（02）Feign(1)" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Zxing扫描二维码</h1>
+        <h1 class="post-card-title">SpringCloud Feign</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-03-18 12:00:20" datetime="2019-03-18T04:00:20.000Z" itemprop="datePublished">2019-03-18</time>
+            <time class="post-time" title="2019-03-19 12:00:20" datetime="2019-03-19T04:00:20.000Z" itemprop="datePublished">2019-03-19</time>
 
             
 
@@ -188,11 +188,21 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h3 id="jar包导入"><a href="#jar包导入" class="headerlink" title="jar包导入"></a>jar包导入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">      &lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;com.google.zxing&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;core&lt;/artifactId&gt;</span><br><span class="line">	&lt;version&gt;3.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;    </span><br><span class="line">	&lt;groupId&gt;com.google.zxing&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;javase&lt;/artifactId&gt;</span><br><span class="line">	&lt;version&gt;3.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">      </span><br><span class="line">      </span><br><span class="line">      &lt;!--为防止修改id连接redis--&gt;</span><br><span class="line"> &lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;org.springframework.session&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;spring-session-data-redis&lt;/artifactId&gt;</span><br><span class="line">	&lt;version&gt;1.3.1.RELEASE&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"> </span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;redis.clients&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;jedis&lt;/artifactId&gt;</span><br><span class="line">	&lt;version&gt;2.8.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="封装的工具类"><a href="#封装的工具类" class="headerlink" title="封装的工具类"></a>封装的工具类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">package com.zhiyou100.util;</span><br><span class="line"></span><br><span class="line">import java.awt.image.BufferedImage;</span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.nio.file.FileSystems;</span><br><span class="line">import java.nio.file.Path;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.Map;</span><br><span class="line"></span><br><span class="line">import javax.imageio.ImageIO;</span><br><span class="line"></span><br><span class="line">import com.google.zxing.BarcodeFormat;</span><br><span class="line">import com.google.zxing.Binarizer;</span><br><span class="line">import com.google.zxing.BinaryBitmap;</span><br><span class="line">import com.google.zxing.DecodeHintType;</span><br><span class="line">import com.google.zxing.EncodeHintType;</span><br><span class="line">import com.google.zxing.LuminanceSource;</span><br><span class="line">import com.google.zxing.MultiFormatReader;</span><br><span class="line">import com.google.zxing.MultiFormatWriter;</span><br><span class="line">import com.google.zxing.NotFoundException;</span><br><span class="line">import com.google.zxing.Result;</span><br><span class="line">import com.google.zxing.client.j2se.BufferedImageLuminanceSource;</span><br><span class="line">import com.google.zxing.client.j2se.MatrixToImageWriter;</span><br><span class="line">import com.google.zxing.common.BitMatrix;</span><br><span class="line">import com.google.zxing.common.HybridBinarizer;</span><br><span class="line"></span><br><span class="line">public class ZXingUtil &#123;</span><br><span class="line">	/**</span><br><span class="line">	 * 生成图像</span><br><span class="line">	 */</span><br><span class="line">	public static void encode(String content, String filePath, String fileName, int width, int height) &#123;</span><br><span class="line">		try &#123;</span><br><span class="line">			String format = &quot;png&quot;;// 图像类型</span><br><span class="line">			Map&lt;EncodeHintType, Object&gt; hints = new HashMap&lt;EncodeHintType, Object&gt;();</span><br><span class="line">			hints.put(EncodeHintType.CHARACTER_SET, &quot;UTF-8&quot;);</span><br><span class="line">			BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height, hints);// 生成矩阵</span><br><span class="line">			Path path = FileSystems.getDefault().getPath(filePath, fileName);//</span><br><span class="line">			System.out.println(path.toString());</span><br><span class="line">			MatrixToImageWriter.writeToPath(bitMatrix, format, path);// 输出图像</span><br><span class="line">			System.out.println(&quot;输出成功.&quot;);</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * 解析图像</span><br><span class="line">	 */</span><br><span class="line">	public static String decode(String filePath) &#123;</span><br><span class="line">		BufferedImage image;</span><br><span class="line">		try &#123;</span><br><span class="line">			image = ImageIO.read(new File(filePath));</span><br><span class="line">			LuminanceSource source = new BufferedImageLuminanceSource(image);</span><br><span class="line">			Binarizer binarizer = new HybridBinarizer(source);</span><br><span class="line">			BinaryBitmap binaryBitmap = new BinaryBitmap(binarizer);</span><br><span class="line">			Map&lt;DecodeHintType, Object&gt; hints = new HashMap&lt;DecodeHintType, Object&gt;();</span><br><span class="line">			hints.put(DecodeHintType.CHARACTER_SET, &quot;UTF-8&quot;);</span><br><span class="line">			Result result = new MultiFormatReader().decode(binaryBitmap, hints);// 对图像进行解码</span><br><span class="line">			return result.getText();</span><br><span class="line">		&#125; catch (IOException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125; catch (NotFoundException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		return null;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="service层"><a href="#service层" class="headerlink" title="service层"></a>service层</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">public String login(User user, HttpSession session) &#123;</span><br><span class="line">		if (user == null || StringUtils.isEmpty(user.getAccount()) || StringUtils.isEmpty(user.getPassword())) &#123;</span><br><span class="line">			return &quot;账号密码不能为空&quot;;</span><br><span class="line">		&#125;</span><br><span class="line">		User user2 = userMapper.findByAccount(user.getAccount());</span><br><span class="line">		if (user2 == null) &#123;</span><br><span class="line">			return &quot;账号不存在&quot;;</span><br><span class="line">		&#125;</span><br><span class="line">		if (!user2.getPassword().equals(user.getPassword())) &#123;</span><br><span class="line">			return &quot;密码错误&quot;;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		Jedis jedis = (Jedis) jedisConnectionFactory.getConnection().getNativeConnection();</span><br><span class="line">		jedis.set(session.getId(), user2.getId()+&quot;&quot;);</span><br><span class="line">//		jedis.expire(session.getId(), 100);</span><br><span class="line">//		jedis.pexpire(session.getId(), 1000);</span><br><span class="line">		session.setAttribute(&quot;user&quot;, user2);</span><br><span class="line">		ZXingUtil.encode(&quot;http://128.0.0.153:8080/JedisDemo03/4.do?id=&quot;+session.getId(), &quot;D:/image/&quot;, session.getId()+&quot;&quot;, 300, 300);</span><br><span class="line">		return &quot;登录成功&quot;;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	//redis -&gt; string</span><br><span class="line">	// set name zhangSan</span><br><span class="line">	// set sessionid  userid</span><br><span class="line">	// set 张三的会话ID	张三的账号id</span><br><span class="line">	// set 李四的会话ID 	李四的账号ID</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	//get 会话ID</span><br><span class="line">	public String login(String id, HttpSession session) &#123;</span><br><span class="line">		Jedis jedis = (Jedis) jedisConnectionFactory.getConnection().getNativeConnection();</span><br><span class="line">		String uid = jedis.get(id);</span><br><span class="line">//		if (id== null || uid == null) &#123;</span><br><span class="line">//			return &quot;二维码已经失效&quot;;</span><br><span class="line">//		&#125;</span><br><span class="line">		User user = userMapper.queryById(Integer.valueOf(uid));</span><br><span class="line">		session.setAttribute(&quot;user&quot;, user);</span><br><span class="line">		return &quot;登陆成功&quot;;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="FileController"><a href="#FileController" class="headerlink" title="FileController"></a>FileController</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">package com.zhiyou100.controller;</span><br><span class="line"></span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import javax.servlet.ServletException;</span><br><span class="line">import javax.servlet.http.HttpServletRequest;</span><br><span class="line">import org.apache.commons.io.FileUtils;</span><br><span class="line">import org.springframework.http.HttpHeaders;</span><br><span class="line">import org.springframework.http.HttpStatus;</span><br><span class="line">import org.springframework.http.MediaType;</span><br><span class="line">import org.springframework.http.ResponseEntity;</span><br><span class="line">import org.springframework.stereotype.Controller;</span><br><span class="line">import org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">@Controller</span><br><span class="line">public class FileController &#123;</span><br><span class="line"></span><br><span class="line">	@RequestMapping(value = &quot;/d.do&quot;)</span><br><span class="line">	public ResponseEntity&lt;byte[]&gt; DownloadFile(String filename, HttpServletRequest req)</span><br><span class="line">			throws ServletException, IOException &#123;</span><br><span class="line">		// 接受的是UTF-8</span><br><span class="line">		req.setCharacterEncoding(&quot;utf-8&quot;);</span><br><span class="line">		// 获取项目根目录</span><br><span class="line">		String path = &quot;D:/image/&quot; + filename;</span><br><span class="line">		// 获取文件名</span><br><span class="line">		File file = null;</span><br><span class="line">		HttpHeaders headers = null;</span><br><span class="line">		try &#123;</span><br><span class="line">			file = new File(path);</span><br><span class="line">			// 请求头</span><br><span class="line">			headers = new HttpHeaders();</span><br><span class="line">			String fileName1 = new String(filename.getBytes(&quot;UTF-8&quot;), &quot;iso-8859-1&quot;);// 解决文件名乱码</span><br><span class="line">			// 通知浏览器以attachment（下载方式）打开图片</span><br><span class="line">			headers.setContentDispositionFormData(&quot;attachment&quot;, fileName1);</span><br><span class="line">			// application/octet-stream二进制流数据（最常见的文件下载）。</span><br><span class="line">			headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			throw new RuntimeException(e);</span><br><span class="line">		&#125;</span><br><span class="line">		return new ResponseEntity&lt;byte[]&gt;(FileUtils.readFileToByteArray(file), headers, HttpStatus.OK);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="页面code"><a href="#页面code" class="headerlink" title="页面code"></a>页面code</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img alt=&quot;&quot; src=&quot;d.do?filename=$&#123;pageContext.session.id&#125;&quot;&gt;</span><br></pre></td></tr></table></figure>
+            <h1 id="一、1-Feign介绍"><a href="#一、1-Feign介绍" class="headerlink" title="一、1.Feign介绍"></a>一、1.Feign介绍</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Feign是一个声明式的伪Http客户端，它使得写Http客户端变得更简单。使用Feign，只需要创建一个接口并注解。它具有可插拔的注解特性，可使用Feign 注解和JAX-RS注解。Feign支持可插拔的编码器和解码器。Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的效果。</span><br><span class="line"></span><br><span class="line">简而言之：</span><br><span class="line"></span><br><span class="line">Feign 采用的是基于接口的注解</span><br><span class="line">Feign 整合了ribbon，具有负载均衡的能力</span><br><span class="line">整合了Hystrix，具有熔断的能力</span><br></pre></td></tr></table></figure>
+<h1 id="二、server-feign"><a href="#二、server-feign" class="headerlink" title="二、server-feign"></a>二、server-feign</h1><p>2.1 pom.xml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">   xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">   &lt;groupId&gt;com.zhiyou100&lt;/groupId&gt;</span><br><span class="line">   &lt;artifactId&gt;server-feign&lt;/artifactId&gt;</span><br><span class="line">   &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;</span><br><span class="line">   &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line">   &lt;name&gt;server-feign&lt;/name&gt;</span><br><span class="line">   &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;</span><br><span class="line"></span><br><span class="line">   &lt;parent&gt;</span><br><span class="line">      &lt;groupId&gt;com.zhiyou100&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;parent&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">   &lt;/parent&gt;</span><br><span class="line"></span><br><span class="line">   &lt;dependencies&gt;</span><br><span class="line">      &lt;dependency&gt;</span><br><span class="line">         &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</span><br><span class="line">         &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-client&lt;/artifactId&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br><span class="line">      &lt;dependency&gt;</span><br><span class="line">         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">         &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br><span class="line">      &lt;dependency&gt;</span><br><span class="line">         &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</span><br><span class="line">         &lt;artifactId&gt;spring-cloud-starter-openfeign&lt;/artifactId&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br><span class="line">   &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2.2 配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#端口</span><br><span class="line">server.port=8011</span><br><span class="line">#spring.application.name非常重要，服务直接的调用是根据这个name值来相互调用的</span><br><span class="line">spring.application.name=server-feign</span><br><span class="line"></span><br><span class="line">#提交到这个注册中心</span><br><span class="line">eureka.client.service-url.defaultZone=http://localhost:8000/eureka/</span><br></pre></td></tr></table></figure></p>
+<p>2.3 入口类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@ComponentScan(&quot;com.zhiyou100&quot;)</span><br><span class="line">@EnableFeignClients</span><br><span class="line">@EnableEurekaClient</span><br></pre></td></tr></table></figure></p>
+<p>2.4 Service<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//找对应的服务名称</span><br><span class="line">@FeignClient(value = &quot;server-user&quot;)</span><br><span class="line">public interface UserService &#123;</span><br><span class="line"></span><br><span class="line">    @RequestMapping(&quot;user/show.do&quot;)</span><br><span class="line">    public ResponseVo&lt;List&lt;User&gt;&gt; queryAll();</span><br><span class="line"></span><br><span class="line">    @RequestMapping(&quot;user/delete&quot;)</span><br><span class="line">    //RequestParam 请求参数</span><br><span class="line">    public ResponseVo&lt;Object&gt; deleteById(@RequestParam(&quot;id&quot;) Integer id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>2.5 Controller<br><code>`</code><br>@Controller<br>public class UserController {</p>
+<pre><code>@Resource
+UserService userService;
+
+@RequestMapping(&quot;show.do&quot;)
+public String show(Model model){
+    model.addAttribute(&quot;users&quot;,userService.queryAll());
+    return &quot;user/show&quot;;
+}
+</code></pre><p>}</p>
 
         </div>
 
@@ -201,12 +211,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-05-15T11:19:37.204Z" itemprop="dateUpdated">2019-05-15 19:19:37</time>
+    最后更新时间：<time datetime="2019-05-15T11:24:46.060Z" itemprop="dateUpdated">2019-05-15 19:24:46</time>
 </span><br>
 
 
         
-        原文链接：<a href="/2019/03/18/zxing扫描二维码/" target="_blank" rel="external">http://www.yslvdy.top/2019/03/18/zxing扫描二维码/</a>
+        原文链接：<a href="/2019/03/19/SpringCloud（02）Feign(1)/" target="_blank" rel="external">http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/</a>
         
     </div>
     
@@ -227,7 +237,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zxing/">zxing</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringCloud/">SpringCloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/feign/">feign</a></li></ul>
 
 
             
@@ -237,7 +247,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/&title=《Zxing扫描二维码》 — YiShan's Blog&pic=http://www.yslvdy.top/img/usb.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/&title=《SpringCloud Feign》 — YiShan's Blog&pic=http://www.yslvdy.top/img/usb.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -247,22 +257,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/&title=《Zxing扫描二维码》 — YiShan's Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/&title=《SpringCloud Feign》 — YiShan's Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Zxing扫描二维码》 — YiShan's Blog&url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/&via=http://www.yslvdy.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringCloud Feign》 — YiShan's Blog&url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/&via=http://www.yslvdy.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -285,18 +295,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2019/03/19/SpringCloud（02）Feign(1)/" id="post-prev" class="post-nav-link">
+      <a href="/2019/03/19/SpringCloud完整项目/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">SpringCloud Feign</h4>
+        <h4 class="title">SpringCloud完整项目</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2019/03/12/svn和jQuery/" id="post-next" class="post-nav-link">
+      <a href="/2019/03/18/zxing扫描二维码/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">SVN 和JQuery</h4>
+        <h4 class="title">Zxing扫描二维码</h4>
       </a>
     </div>
   
@@ -423,7 +433,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/&title=《Zxing扫描二维码》 — YiShan's Blog&pic=http://www.yslvdy.top/img/usb.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/&title=《SpringCloud Feign》 — YiShan's Blog&pic=http://www.yslvdy.top/img/usb.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -433,22 +443,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/&title=《Zxing扫描二维码》 — YiShan's Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/&title=《SpringCloud Feign》 — YiShan's Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Zxing扫描二维码》 — YiShan's Blog&url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/&via=http://www.yslvdy.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringCloud Feign》 — YiShan's Blog&url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/&via=http://www.yslvdy.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yslvdy.top/2019/03/18/zxing扫描二维码/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yslvdy.top/2019/03/19/SpringCloud（02）Feign(1)/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -459,7 +469,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aUY6DMAwFwN7/0t0DtIVnG1YiGb6qFSUZVnJtx69XfL2D6/jOz6f9+vx5/2UXBgbGYxm9zeULJ/dXX8qXFTEwMDZgJMsnW3+3rmTdkz1jYGBgxEHzqvwNAwMDY87IE8EkBfz1gjAwMDB6QTDZUJV3zLi4FsfAwHggI++6///nW843MDAwHsWYNMV6iWBSspZ3hYGBsTRj0iY73vq8xM33g4GBsScjPxLo3Vn9S5QsYmBgLM3olY750Fi1lTZ5ERgYGOsxemVndZnkCaPWGwYGxtKMXmY1CZp5KTvK/TAwMJZj9BK4fPQhYeSJJgYGxm6MaojMg+PdvC9FLAYGxgaMPOHLA/F9h5onMyMYGBgLMSZDElV23oAbhXIMDIzlGJPGfbW47R0tRC05DAyMpRm9I8nJcEY11OajGxgYGGszeslc7xgyH/zKd4WBgbE2Iw+a1XCZp5K9cvrL/wEDA2NRRr71ahitHmQmT8jHOzAwMNZjJIld/rjeX3ottpNfDwwMjEUZx8GuN2YxaeEV0kcMDIzNGJPBizxEVo8ZTl4KBgbGoozJ2ETvqr6aiIqBgbE0ozcqkRwVVLfYG7wowzAwMB7LyIPsJL5V08RqAYyBgbEDYx74eoG1+gvw81sYGBgY8cDE8fHncX6ahNeTihwDAwMjeOik0VYdvLgg4GJgYDyKUR2byBfIy9E8TcTAwNiNkZeOd6eS+beaTUAMDIznMf4AcvIi4M6Em94AAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3aQY7CMAwFUO5/6c4WiWn5tgGpycsKoZb6Fcly7Dwe8Tpe1vP311cm17x+//jGwsDAuC3juFyfek/5719/fxoJBgbGBoyzB599Pkuj1bDy576JGQMDA2MQdJI6r+/CwMDA6CXcKin/HQwMDIzJJvZTDbvkyi/uxTEwMG7IyIP4/eevzDcwMDBuxTiKaz6qrLb+o6gwMDCWZuQJrseblIDlQhMDA2MbxnWDrDrOzFtveQPu9HoMDIylGXlDv7q9zNtkyUG0hI2BgbEeo3eQq3qoK0/KUUrtPRIDA+O2jMkIs1dE5mOAMgwDA2NRRi+xJgVckr6rMbz5HzAwMBZl5E2u6uaz2tavPvFN1xADA2MDRt6U76XjaptvNInFwMC4OSMp1Kqtsd8k3H/+BwwMjEUZvQydl5K9u/L9KQYGxp6MvODrtfJzcN6Yw8DAWJuRl3G9FDx/QdcRYmBg7MOYHLaoFnPVcWZ5L46BgbEcI2+xTRr9k6lF/loxMDD2YeTjyWR9alQQxYOBgbEBI0mC1TSaMKpHyjAwMDCqZWJeROaDhGr7DwMDY23GUVy9orCXdvOjGBgYGGsz5mH1tqnV8WfhzAgGBsaijN4Ic37MYj4MwMDA2I3Ra4T1gpiUnqd3YWBgYMRpNA8xLwqjTSwGBgZG60BGfs1kC42BgbEPI9nE5gk0H3/2uoAYGBi7MapHHJKjFdVDZnkqHw01MTAw7sf4A+Z4k2HcvL2LAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
